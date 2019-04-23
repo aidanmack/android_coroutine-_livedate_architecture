@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">RetrofitCoroutineLiveData</string>
+  <string name="main_menu_rockets">Rockets</string>
+  <string name="main_menu_landing_pads">Landing Pads</string>
+</resources>
