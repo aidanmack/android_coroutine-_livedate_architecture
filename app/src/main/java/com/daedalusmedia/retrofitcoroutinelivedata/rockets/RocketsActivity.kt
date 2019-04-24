@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.daedalusmedia.retrofitcoroutinelivedata.R
+import com.daedalusmedia.retrofitcoroutinelivedata.api.LCE
 
 class RocketsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,10 +18,19 @@ class RocketsActivity : AppCompatActivity() {
             RocketsViewModelFactory()
         ).get(RocketsViewModel::class.java)
 
-        viewModel.rockets.observe(this, Observer { rockets ->
 
-            rockets.forEach {
-                Log.d("***", "ROCKET ${it.rocketName}")
+
+        viewModel.show.observe(this, Observer { lce ->
+            when (lce) {
+                is LCE.Content -> {
+                    Log.d("***", "The content ${lce.content}")
+                }
+                is LCE.Loading -> {
+                    Log.d("***", "The loading")
+                }
+                is LCE.Error -> {
+                    Log.d("***", "The error")
+                }
             }
         })
     }
