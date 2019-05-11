@@ -7,5 +7,5 @@ import com.daedalusmedia.retrofitcoroutinelivedata.api.SpaceXRocketsData
 import com.daedalusmedia.retrofitcoroutinelivedata.api.SpaceXApi
 
 class RocketsServiceSpaceX(private val api: SpaceXApi) : RocketsService, DeferredManager() {
-    override fun getRockets(): MutableLiveData<List<SpaceXRocketsData>> = LiveDataApiRequest(jobs, jobError, api.therockAsync())
+    override fun getRockets(): MutableLiveData<List<SpaceXRocketsData>> = LiveDataApiRequest(jobs, jobError, api.rocketsAsync())
 }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:Tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.daedalusmedia.retrofitcoroutinelivedata.api.SpaceXRocketsData" />
+  </data>
+
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+      android:id="@+id/item_rocket_title"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@{item.rocketName}"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/item_rocket_height"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@{String.format(@string/rockets_height, Double.toString(item.height.feet))}"
+      Tools:text="The rocket height"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/item_rocket_title" />
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@{item.description}"
+      Tools:text="A description of the rocket will go here eventually"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/item_rocket_height" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

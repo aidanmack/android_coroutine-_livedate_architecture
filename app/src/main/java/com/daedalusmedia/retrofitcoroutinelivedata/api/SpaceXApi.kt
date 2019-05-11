@@ -15,16 +15,12 @@ val api get() = SpaceXApi.instance()
 interface SpaceXApi {
 
     @GET("rockets")
-    fun therockAsync(): Deferred<Response<List<SpaceXRocketsData>>>
-
+    fun rocketsAsync(): Deferred<Response<List<SpaceXRocketsData>>>
 
     companion object Factory {
         private var retrofit: Retrofit = buildRetrofit()
         private const val BASE_URL: String = "https://api.spacexdata.com/v3/"
         fun instance(): SpaceXApi {
-//            if (retrofit == null) {
-//                retrofit = buildRetrofit()
-//            }
             return retrofit.create(SpaceXApi::class.java)
         }
 

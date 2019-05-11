@@ -1,5 +1,9 @@
 <resources>
   <string name="app_name">RetrofitCoroutineLiveData</string>
+  <string name="main_menu_title">SpaceX</string>
   <string name="main_menu_rockets">Rockets</string>
   <string name="main_menu_landing_pads">Landing Pads</string>
+
+  <string name="rockets_title">SpaceX - Rockets</string>
+  <string name="rockets_height">%s ft</string>
 </resources>
