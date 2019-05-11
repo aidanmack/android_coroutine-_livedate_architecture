@@ -11,6 +11,7 @@ class MainMenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.title = resources.getString(R.string.main_menu_title)
         main_menu_rockets.setOnClickListener {
             startActivity(Intent(this, RocketsActivity::class.java))
         }
