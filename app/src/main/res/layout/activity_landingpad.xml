@@ -2,13 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/rockets_root"
+  android:id="@+id/landing_pads_root"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".rockets.RocketsActivity">
+  tools:context=".landingpads.LandingPadActivity">
 
   <androidx.core.widget.ContentLoadingProgressBar
-    android:id="@+id/rockets_progress"
+    android:id="@+id/landing_pads_progress"
     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -18,13 +18,13 @@
     app:layout_constraintTop_toTopOf="parent" />
 
   <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/rockets_list"
+    android:id="@+id/landing_pads_list"
     android:layout_width="0dp"
     android:layout_height="0dp"
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/rockets_progress" />
+    app:layout_constraintTop_toBottomOf="@id/landing_pads_progress" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
