@@ -17,6 +17,9 @@ interface SpaceXApi {
     @GET("rockets")
     fun rocketsAsync(): Deferred<Response<List<SpaceXRocketsData>>>
 
+    @GET("landPads")
+    fun landPadsAsync(): Deferred<Response<List<SpaceXLandingPadsData>>>
+
     companion object Factory {
         private var retrofit: Retrofit = buildRetrofit()
         private const val BASE_URL: String = "https://api.spacexdata.com/v3/"

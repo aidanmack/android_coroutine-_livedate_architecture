@@ -6,4 +6,6 @@
 
   <string name="rockets_title">SpaceX - Rockets</string>
   <string name="rockets_height">%s ft</string>
+
+  <string name="landing_pads_title">SpaceX - Landing pads</string>
 </resources>
