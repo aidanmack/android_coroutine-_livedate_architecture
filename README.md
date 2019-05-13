@@ -25,9 +25,6 @@ The Libary used for making HTTP API calls to the SpaceX API
 
 - **ViewModel** - The project uses the `ViewModel` class (part of the Android Jetpack suite of libraries) to store and manage UI - related data in a lifecycle conscious way
 
+:arrow_down:
 
-
-
-
-
-
+- **LCE** - In most cases when an apps UI is working with HTTP data, it needs to know about 3 different states (Loading, Content, Error). The LCE is a wrapper for the SpaceX content and reflects the states that this data could be in. 
