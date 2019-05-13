@@ -3,8 +3,7 @@
 
 To demonstrate this architecture it uses the publicaly available SpaceX API to list SpaceX rockets and landing pads.
 
-
-
+<img src="spaceXdemo.gif" width="250" align="middle" alt="Space X demo">
 
 The flow of data in this Android architecture from top to bottom can be summarized as:
 
