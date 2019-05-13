@@ -1,2 +1,2 @@
 # android_coroutine-_livedate_architecture
-Demonstrates an architecture from Retrofit -> Coroutine -> Livedata -> Service -> ViewModel -> LCE -> Activity
+An Android architecture using Coroutines, dependency inversion (Api Service), LiveData,  ViewModel, LCE, Activity
