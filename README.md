@@ -1,4 +1,4 @@
-# Android - coroutine livedate architecture
+# Android - Coroutine Livedate architecture
 ## An Android architecture using Retrofit, Coroutines, dependency inversion (Api Service), LiveData,  ViewModel, LCE, Activity, Last Adapter.
 
 To demonstrate this architecture it uses the publicaly available SpaceX API to list SpaceX rockets and landing pads.
