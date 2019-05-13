@@ -36,6 +36,8 @@ The library used for making HTTP API calls to the SpaceX API
 
 - **Activity** - Observers a `LiveData` object in the `ViewModel` called `show` of type `LCE`. The Activity uses the emited object from the `LiveData` to update relevant UI views.
 
+:arrow_down:
+
 - **LastAdapter** - The app then need to display lists of either rockets or Landing pads. To do so the app uses a `RecyclerView`. To create the adapters for these `RecyclerViews` the app uses a library called `LastAdapter` for a simpler approach 
 
 ###### Bottom
