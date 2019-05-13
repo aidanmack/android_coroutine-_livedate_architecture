@@ -14,7 +14,7 @@ The Libary used for making HTTP API calls to the SpaceX API
 
 :arrow_down:
 
-- **Coroutines** - To make the above API calls they must be run Asynchronously off the main thread. This is done by running a `Deferred` task created by Retrofit within a coroutineScope
+- **Coroutines** - To make the above API calls they must be run asynchronously off the main thread. This is done by running a `Deferred` task created by Retrofit within a coroutineScope
 
 :arrow_down:
 
@@ -26,7 +26,7 @@ The Libary used for making HTTP API calls to the SpaceX API
 
 :arrow_down:
 
-- **ViewModel** - The project uses the `ViewModel` class (part of the Android Jetpack suite of libraries) to store and manage UI - related data in a lifecycle conscious way
+- **ViewModel** - The project uses the `ViewModel` class (part of the Android Jetpack suite of libraries) to store and manage UI - related data in a lifecycle conscious way. The relevant service using Inversion is injected into `ViewModel` 
 
 :arrow_down:
 
@@ -35,5 +35,7 @@ The Libary used for making HTTP API calls to the SpaceX API
 :arrow_down:
 
 - **Activity** - Observers a `LiveData` object in the `ViewModel` called `show` of type `LCE`. The Activity uses the emited object from the `LiveData` to update relevant UI views.
+
+- **LastAdapter** - The app then need to display lists of either rockets or Landing pads. To do so the app uses a `RecyclerView`. To create the adapters for these `RecyclerViews` the app uses a libary called `LastAdapter` for a simpler approach 
 
 ###### Bottom
