@@ -18,7 +18,11 @@ The Libary used for making HTTP API calls to the SpaceX API
 
 :arrow_down:
 
-- **Dependency Inversion** - Dependency Inversion is used for the service that supplies the SpaceX API `Deferred` task to be used in the `LiveData` objects
+- **Dependency Inversion** - Dependency Inversion is used for the service that supplies the `LiveDataApiModels`. This should help to make the ViewModels easier to test.
+
+:arrow_down:
+
+- **LiveData** - LiveData objects can be created in the concrete Service class that implements interface for Inversion.  
 
 :arrow_down:
 
@@ -27,3 +31,9 @@ The Libary used for making HTTP API calls to the SpaceX API
 :arrow_down:
 
 - **LCE** - In most cases when an apps UI is working with HTTP data, it needs to know about 3 different states (Loading, Content, Error). The LCE is a wrapper for the SpaceX content and reflects the states that this data could be in. 
+
+:arrow_down:
+
+- **Activity** - Observers a `LiveData` object in the `ViewModel` called `show` of type `LCE`. The Activity uses the emited object from the `LiveData` to update relevant UI views.
+
+###### Bottom
