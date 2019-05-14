@@ -1,5 +1,5 @@
 # Android - Coroutine Livedate architecture
-## An Android architecture using Retrofit, Coroutines, dependency inversion, LiveData,  ViewModel, LCE, Activity, Last Adapter.
+## An Android architecture using Retrofit, coroutines, dependency inversion, LiveData,  ViewModel, LCE, Activity, Last Adapter.
 
 To demonstrate this architecture it uses the publicly available SpaceX API to list SpaceX rockets and landing pads.
 
@@ -22,15 +22,15 @@ The library used for making HTTP API calls to the SpaceX API
 
 :arrow_down:
 
-- **LiveData** - LiveData objects can be created in the concrete Service class that implements interface for Inversion.  
+- **LiveData** - LiveData objects can be created in the concrete service class that implements interface for inversion.  
 
 :arrow_down:
 
-- **ViewModel** - The project uses the `ViewModel` class (part of the Android Jetpack suite of libraries) to store and manage UI - related data in a lifecycle conscious way. The relevant service using Inversion is injected into `ViewModel` 
+- **ViewModel** - The project uses the `ViewModel` class (part of the Android Jetpack suite of libraries) to store and manage UI - related data in a lifecycle conscious way. The relevant service using inversion is injected into the `ViewModel` 
 
 :arrow_down:
 
-- **LCE** - In most cases when an apps UI is working with HTTP data, it needs to know about 3 different states (Loading, Content, Error). The LCE is a wrapper for the SpaceX content and reflects the states that this data could be in. 
+- **LCE** - In alot of cases when an apps UI is working with HTTP data it needs to know about 3 different states (Loading, Content, Error). The LCE is a wrapper for the SpaceX content and reflects the states that this data could be in. 
 
 :arrow_down:
 
@@ -38,6 +38,6 @@ The library used for making HTTP API calls to the SpaceX API
 
 :arrow_down:
 
-- **LastAdapter** - The app then need to display lists of either rockets or Landing pads. To do so the app uses a `RecyclerView`. To create the adapters for these `RecyclerViews` the app uses a library called `LastAdapter` for a simpler approach 
+- **LastAdapter** - The app then need to display lists of either rockets or Landing pads. To do so the app uses a `RecyclerView`. To create the adapters for these `RecyclerViews` the app uses a library called `LastAdapter` for a simple approach.
 
 ###### Bottom
